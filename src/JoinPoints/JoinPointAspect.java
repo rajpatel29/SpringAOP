@@ -1,4 +1,4 @@
-package JoinPoints_and_Advice_Arguments;
+package JoinPoints;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
@@ -8,8 +8,9 @@ import org.aspectj.lang.annotation.Pointcut;
 import Shapes.Circle;
 
 @Aspect
-public class AspectClass 
+public class JoinPointAspect 
 {
+/*	
 	@Before("allCircleMethod()")
 	public void logginAdvice(JoinPoint jointPoint)
 	{
@@ -28,20 +29,7 @@ public class AspectClass
 	@Pointcut("within(Shapes.Circle)")
 	public void allCircleMethod()
 	{}
-	
-/*	
-	@Before("args(String)")
-	public void stringArgumentMethod()
-	{
-		System.out.println("A method that takea String as argument");
-	}
 */	
-	
-	//If you want to know the value of that parameter
-	@Before("args(name)")
-	public void stringArgumentMethod(String name)
-	{
-		System.out.println("A method that takea String as argument. which is " + name );
-	}
+
 	
 }

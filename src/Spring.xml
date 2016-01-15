@@ -22,14 +22,14 @@
 
 	<bean name = "shapeService"  class = "Shapes.ShapeService"  autowire="byName" />
 	
-	
 	<bean name = "loggingAspect" class = "Simple_Aspect.LoggingAspect"  />
 
 	<bean name = "wildcardAspect" class = "WildCard.WildCardAspect"  />
 
 	<bean name = "pointcutAspect" class = "PointCut.PointCutAspect"  />
 	
-	<bean name = "joinPointsandadvicearguments" class = "JoinPoints_and_Advice_Arguments.AspectClass"  />
+	<bean name = "joinPointsandadvicearguments" class = "JoinPoints.JoinPointAspect"  />
 	
+	<bean name = "AdviceAspect" class = "Advice_Type.AdviceAspect"  />
 	
 </beans>

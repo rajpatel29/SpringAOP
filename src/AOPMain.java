@@ -19,6 +19,8 @@ public class AOPMain
 		obj.getCircle().setName("xyz");
 		
 		
+		obj.getCircle().setAndReturnName("dummy string");
+		
 		
 		System.out.println("===============================");
 		
