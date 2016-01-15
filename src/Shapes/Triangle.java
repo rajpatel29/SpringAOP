@@ -1,4 +1,6 @@
-public class Circle
+package Shapes;
+
+public class Triangle 
 {
 	private String name;
 
@@ -11,4 +13,5 @@ public class Circle
 	{
 		this.name = name;
 	}
+	
 }
