@@ -5,7 +5,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
-import Shapes.Circle;
+import Model.Circle;
 
 @Aspect
 public class JoinPointAspect 

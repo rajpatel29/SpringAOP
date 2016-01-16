@@ -1,4 +1,4 @@
-package Shapes;
+package Model;
 
 public class Triangle 
 {

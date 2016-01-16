@@ -3,7 +3,8 @@ import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import Shapes.*;
+
+import Model.*;
 @Aspect
 public class LoggingAspect 
 {

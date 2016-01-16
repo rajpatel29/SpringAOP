@@ -1,4 +1,8 @@
-package Shapes;
+package Service;
+
+import Custom_Advice_Annotations.Loggable;
+import Model.Circle;
+import Model.Triangle;
 
 public class ShapeService
 {
@@ -12,7 +16,13 @@ public class ShapeService
 	public void setTriangle(Triangle triangle) {
 		this.triangle = triangle;
 	}
-	public Circle getCircle() {
+	
+	
+	@Loggable
+	public Circle getCircle()
+	{
+		System.out.println("ShapeService class getCircle method :)");
+		
 		return circle;
 	}
 	public void setCircle(Circle circle) {

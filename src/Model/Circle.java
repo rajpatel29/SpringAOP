@@ -1,4 +1,4 @@
-package Shapes;
+package Model;
 
 public class Circle
 {
@@ -6,6 +6,7 @@ public class Circle
 
 	public String getName() 
 	{
+		
 		return name;
 	}
 

@@ -1,9 +1,9 @@
 package Advice_Type;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
 public class AdviceAspect 
@@ -17,6 +17,9 @@ public class AdviceAspect
  */	
 	
 
+	
+	
+	
 	
 	
 	
@@ -48,6 +51,11 @@ public class AdviceAspect
 	
 	
 	
+	
+	
+	
+	
+	
 /*	
 
 	//if tou want returning object of the method then
@@ -60,6 +68,61 @@ public class AdviceAspect
 		System.out.println("output of the setAndReturnName method is " + returnString );
 	}
 */	
+	
+	
+	
+	
+	
+	
+	
+/*	
+	
+	//If you want to execute some statements after and before a method then
+	
+	//It has to have one argument of type
+	//you can have more arguments based on your requirements.
+	//lets say you want to execute below method for those method which takes one argument
+	//you will have to use proceedingJointPoint.proceed();
+	
+	//In AfterReturning we can get Object as a output of a target method but we can not modify it
+	//But in Around we can modify the object if we want to
+	
+	
+	//custome advice annotation
+	@Around("@annotation(Custom_Advice_Annotations.Loggable)")
+	
+	//target method returns an object that's why
+	public Object myAroundAdvice(ProceedingJoinPoint  proceedingJointPoint)
+	{
+		Object returnValue = null;
+		
+		try 
+		{
+			System.out.println("Before advice");
+			
+			//if you want to execute target advice
+			//this executes the method that this advice method advices
+			//you can if you want skip using if condition
+			returnValue = proceedingJointPoint.proceed();
+
+			System.out.println("After reeturning");
+		
+		} 
+		catch (Throwable e) 
+		{
+			e.printStackTrace();
+		}
+		
+		
+		System.out.println("After finally");
+		
+		return returnValue;
+	}
+	
+*/
+	
+	
+	
 	
 	
 	

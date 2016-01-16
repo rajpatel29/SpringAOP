@@ -10,17 +10,17 @@
 	<aop:aspectj-autoproxy />
 
 
-	<bean name = "triangle"  class = "Shapes.Triangle" >
+	<bean name = "triangle"  class = "Model.Triangle" >
 		<property name="name"   value="Triangle Name"></property>	
 	</bean>
 
 
-	<bean name = "circle"  class = "Shapes.Circle" >
+	<bean name = "circle"  class = "Model.Circle" >
 		<property name="name"   value="Circle Name"></property>	
 	</bean>
 
 
-	<bean name = "shapeService"  class = "Shapes.ShapeService"  autowire="byName" />
+	<bean name = "shapeService"  class = "Service.ShapeService"  autowire="byName" />
 	
 	<bean name = "loggingAspect" class = "Simple_Aspect.LoggingAspect"  />
 
@@ -31,5 +31,38 @@
 	<bean name = "joinPointsandadvicearguments" class = "JoinPoints.JoinPointAspect"  />
 	
 	<bean name = "AdviceAspect" class = "Advice_Type.AdviceAspect"  />
+
+
+
+
+
+
+
+	<bean name = "xmlConfig" class = "XML_configuration.AspectClass"  />
+	
+	
+	<aop:config>
+	
+		<aop:aspect id="xmlConfig" ref = "xmlConfig" > 
+			<aop:pointcut  id = "allGetters"  expression="execution( * get*() )" />
+			<aop:around  pointcut-ref="allGetters"  method="myAroundAdvice" />
+		</aop:aspect>
+	
+	</aop:config>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </beans>
