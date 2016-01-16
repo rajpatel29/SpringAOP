@@ -3,19 +3,18 @@ package Advice_Type;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
 public class AdviceAspect 
 {
-/*		
+
+/*	
 	@Before("args(String)")
 	public void stringArgumentMethod()
 	{
-		System.out.println("A method that takea String as argument");
+		System.out.println("A method that take a String as argument");
 	}
- */	
-	
+*/	
 
 	
 	
@@ -23,8 +22,7 @@ public class AdviceAspect
 	
 	
 	
-	
-/*	
+/*		
 	//If you want to know the value of that parameter
 	//try @Before @After see the difference
 	//if while executing setter we get exception then this will not execute 
@@ -118,8 +116,9 @@ public class AdviceAspect
 		
 		return returnValue;
 	}
-	
-*/
+
+*/	
+
 	
 	
 	

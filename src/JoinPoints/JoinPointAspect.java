@@ -10,7 +10,8 @@ import Model.Circle;
 @Aspect
 public class JoinPointAspect 
 {
-/*	
+	
+/*
 	@Before("allCircleMethod()")
 	public void logginAdvice(JoinPoint jointPoint)
 	{
@@ -26,10 +27,9 @@ public class JoinPointAspect
 		
 	}
 	
-	@Pointcut("within(Shapes.Circle)")
+	@Pointcut("within(Model.Circle)")
 	public void allCircleMethod()
 	{}
-*/	
-
+*/
 	
 }

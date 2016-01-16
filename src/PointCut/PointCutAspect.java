@@ -29,12 +29,13 @@ public class PointCutAspect
 
 		
 		//for all the method within Circle class
-		@Pointcut("within(Shapes.Circle)")
+		@Pointcut("within(Model.Circle)")
 		public void allCircleMethod()
 		{}
 		
 		
 		//It looks for method arguments
 		//@Pointcut(args ())
-*/		
+
+ */
 }

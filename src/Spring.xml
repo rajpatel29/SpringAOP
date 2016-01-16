@@ -36,7 +36,7 @@
 
 
 
-
+<!--  
 
 	<bean name = "xmlConfig" class = "XML_configuration.AspectClass"  />
 	
@@ -50,7 +50,7 @@
 	
 	</aop:config>
 	
-	
+	-->
 	
 	
 	

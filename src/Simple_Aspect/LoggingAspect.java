@@ -17,14 +17,13 @@ public class LoggingAspect
 	}
 	
 	//For specific class(package)
-	@Before("execution(public String Shapes.Circle.getName() )")
+	@Before("execution(public String Model.Circle.getName() )")
 	public void logginAdvice_2()
 	{
 		System.out.println("Advice run. 2");
 	}
-*/	
 	
-	
+	*/
 
 	
 	
